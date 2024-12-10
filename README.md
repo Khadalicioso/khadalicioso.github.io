@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Portfolio Demo](https://img.shields.io/badge/Demo-Live%20Preview-blue)](https://khadalicioso.github.io/miguelenriquedasalla)
+[![Portfolio Demo](https://img.shields.io/badge/Demo-Live%20Preview-blue)](https://khadalicioso.github.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org/)
 
@@ -14,7 +14,7 @@
 
 Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.
 
-**Portfolio Demo:** [https://khadalicioso.github.io/miguelenriquedasalla/](https://khadalicioso.github.io/miguelenriquedasalla/)
+**Portfolio Demo:** [https://khadalicioso.github.io/](https://khadalicioso.github.io/)
 
 ## Core Features
 
@@ -53,13 +53,13 @@ Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate and d
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/Khadalicioso/miguelenriquedasalla.git
+   git clone https://github.com/Khadalicioso/khadalicioso.github.io.git
    ```
 
 2. Navigate to project directory
 
    ```bash
-   cd miguelenriquedasalla
+   cd khadalicioso.github.io
    ```
 
 3. Install dependencies
@@ -79,7 +79,7 @@ Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate and d
 ## Project Structure
 
 ```
-miguelenriquedasalla/
+khadalicioso.github.io/
 ├── public/
 │   ├── index.html
 │   └── assets/
@@ -93,7 +93,7 @@ miguelenriquedasalla/
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Khadalicioso/miguelenriquedasalla/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Khadalicioso/khadalicioso.github.io/issues).
 
 ## License
 
