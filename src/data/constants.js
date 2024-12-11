@@ -338,7 +338,7 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/javascript_mastery_projects_collection.git",
     demo: "",
-    status: "inprogress",
+    status: "onhold",
   },
   {
     id: 0,
@@ -358,6 +358,6 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/modern_web_development_projects.git",
     demo: "",
-    status: "inprogress",
+    status: "onhold",
   },
 ];
