@@ -2,19 +2,12 @@
 
 ## _My Personal Portfolio_
 
-<div align="center">
-
-[![Portfolio Demo](https://img.shields.io/badge/Demo-Live%20Preview-blue)](https://khadalicioso.github.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org/)
-
-</div>
-
 ## Overview
 
 Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.
 
 **Portfolio Demo:** [https://khadalicioso.github.io/](https://khadalicioso.github.io/)
+**Portfolio Demo:** [https://miguelenriquedasalla.netlify.app/](https://miguelenriquedasalla.netlify.app/)
 
 ## Core Features
 
