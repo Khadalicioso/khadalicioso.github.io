@@ -330,7 +330,7 @@ export const projects = [
   {
     id: 1,
     title: "JavaScript Mastery",
-    date: "June 2024 - Present",
+    date: "June 2024 - December 2024",
     description:
       "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
     image: javascript_mastery,
@@ -343,7 +343,7 @@ export const projects = [
   {
     id: 0,
     title: "Landing Page Collection",
-    date: "June 2024 - Present",
+    date: "June 2024 - December 2024",
     description:
       "A collection of modern, responsive landing pages and web applications built with various technologies.",
     image: landing_pages,
