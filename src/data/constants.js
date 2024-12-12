@@ -220,7 +220,7 @@ export const projects = [
     image: netflix_clone,
     tags: ["React JS", "Firebase"],
     source: "https://github.com/Khadalicioso/netflix_clone.git",
-    demo: "https://khadalicioso.github.io/netflix_clone/",
+    demo: "",
     status: "completed",
   },
   {
@@ -232,7 +232,7 @@ export const projects = [
     image: carhub,
     tags: ["Next JS", "TypeScript", "Tailwind CSS"],
     source: "https://github.com/Khadalicioso/carhub.git",
-    demo: "https://khadalicioso.github.io/carhub/",
+    demo: "",
     status: "completed",
   },
   {
