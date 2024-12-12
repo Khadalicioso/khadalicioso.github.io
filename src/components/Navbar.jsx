@@ -274,7 +274,7 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo>
           <ColorText>&lt;</ColorText>
-          <NameText>Miguel</NameText>
+          <NameText>Miguel Enrique</NameText>
           <SlashText>/</SlashText>
           <ColorText>&gt;</ColorText>
         </NavLogo>
