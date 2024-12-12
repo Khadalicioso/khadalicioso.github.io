@@ -6,7 +6,7 @@
 
 Welcome to my personal portfolio! I'm Miguel Enrique Dasalla, a passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.
 
-**Portfolio Demo:** [https://khadalicioso.github.io/](https://khadalicioso.github.io/)
+**Portfolio Demo:** [https://khadalicioso.github.io/](https://khadalicioso.github.io/)<br/><br/>
 **Portfolio Demo:** [https://miguelenriquedasalla.netlify.app/](https://miguelenriquedasalla.netlify.app/)
 
 ## Core Features
