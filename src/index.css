@@ -15,28 +15,29 @@ body {
   background-color: #1C1C27;
 }
 
-/* width */
+/*========== WIDTH ==========*/
 ::-webkit-scrollbar {
   width: 4px;
   height: 80px;
 }
 
-/* Track */
+/*========== TRACK ==========*/
 ::-webkit-scrollbar-track {
   background: #222a35;
 }
 
-/* Handle */
+/*========== HANDLE ==========*/
 ::-webkit-scrollbar-thumb {
   background: #575c66;
   border-radius: 6px;
 }
 
-/* Handle on hover */
+/*========== HOVER ==========*/
 ::-webkit-scrollbar-thumb:hover {
   background: #626970;
 }
 
+/* ========== FILTER ========== */
 ::-webkit-backdrop-filter {
   -webkit-filter: blur(3px) saturate(106%);
 }
