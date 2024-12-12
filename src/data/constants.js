@@ -174,7 +174,7 @@ export const experiences = [
       "CSS",
       "JavaScript",
       "Bootstrap",
-      "ASP.NET",
+      "ASP.NET Core",
       "MVC",
       "PHP",
       "MySQL",
