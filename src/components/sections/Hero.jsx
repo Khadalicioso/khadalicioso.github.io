@@ -20,27 +20,33 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 120px 30px;
   z-index: 1;
-  @media (max-width: 349px) {
-    padding: 60px 16px;
-  }
-  @media (max-width: 475px) {
-    padding: 60px 20px;
-  }
-  @media (max-width: 639px) {
-    padding: 50px 16px;
-  }
-  @media (max-width: 767px) {
-    padding: 60px 20px;
-  }
-  @media (max-width: 899px) {
-    padding: 80px 20px;
-  }
-  @media (max-width: 1023px) {
-    padding: 100px 20px;
-  }
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    padding: 7.5rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 97%, 0 100%);
+    justify-content: flex-start;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 6.25rem 1.875rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 96%, 0 100%);
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 8.125rem 2.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    padding: 9.375rem 3.125rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  }
 `;
 
 const HeroInnerContainer = styled.div`
@@ -49,29 +55,74 @@ const HeroInnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  @media (max-width: 960px) {
+  max-width: 90rem;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     flex-direction: column;
   }
-  @media (max-width: 639px) {
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     flex-direction: column;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
   }
 `;
 
 const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
-  @media (max-width: 960px) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     order: 2;
-    margin-bottom: 40px;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    max-width: 100%;
   }
-  @media (max-width: 639px) {
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     order: 2;
-    margin-bottom: 40px;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    max-width: 50%;
+    padding-right: 1rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    padding-right: 3rem;
+    max-width: 50%;
+    justify-content: center;
+    align-items: flex-start;
   }
 `;
 
@@ -79,40 +130,87 @@ const HeroRightContainer = styled.div`
   width: 100%;
   order: 2;
   display: flex;
-  justify-content: end;
-  @media (max-width: 960px) {
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-contents: center;
-    margin-bottom: 100px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    min-height: 18.75rem;
   }
-  @media (max-width: 639px) {
-    margin-bottom: 40px;
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    order: 1;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 25rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    max-width: 45%;
+    padding-left: 1rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    order: 2;
+    justify-content: flex-end;
+    padding-left: 3rem;
+    max-width: 50%;
+    min-height: 31.25rem;
+    position: relative;
+    right: 0;
   }
 `;
 
 const Title = styled.div`
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3.25rem;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 72px;
-  @media (max-width: 960px) {
+  line-height: 1.4;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 1.5rem;
     text-align: center;
+    line-height: 1.3;
+    margin-bottom: 0.625rem;
   }
-  @media (max-width: 639px) {
-    font-size: 38px;
-    line-height: 50px;
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 2.625rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 0.9375rem;
   }
-  @media (max-width: 475px) {
-    font-size: 26px;
-    line-height: 44px;
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 3rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
   }
-  @media (max-width: 349px) {
-    font-size: 22px;
-    line-height: 38px;
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    font-size: 3.25rem;
+    line-height: 1.4;
+    margin-bottom: 1.5625rem;
   }
+
   span {
     display: inline-block;
     transition: transform 0.3s ease-in-out;
@@ -129,91 +227,131 @@ const Title = styled.div`
       background-clip: text;
     }
   }
+
   @keyframes wave {
     0%,
     100% {
       transform: translateY(0);
     }
     25% {
-      transform: translateY(-8px) rotate(-3deg);
+      transform: translateY(-0.5rem) rotate(-3deg);
     }
     50% {
       transform: translateY(0) rotate(0deg);
     }
     75% {
-      transform: translateY(8px) rotate(3deg);
+      transform: translateY(0.5rem) rotate(3deg);
     }
   }
 `;
 
 const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.25rem;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 72px;
-  @media (max-width: 960px) {
+  line-height: 4.5rem;
+  align-items: center;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    gap: 0.75rem;
+    justify-content: center;
     text-align: center;
+    margin-top: 0.5rem;
   }
-  @media (max-width: 639px) {
-    font-size: 20px;
-    line-height: 40px;
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    gap: 0.875rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.75rem;
   }
-  @media (max-width: 349px) {
-    font-size: 18px;
-    line-height: 38px;
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    gap: 1rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    gap: 1rem;
   }
 `;
 
 const Span = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.primary};
-  display: inline-block;
-  text-align: center;
 
-  @media (max-width: 899px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 12px 0;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 1.25rem;
   }
 
-  @media (max-width: 639px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 6px 0;
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 1.75rem;
   }
 
-  @media (max-width: 349px) {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 4px 0;
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 2rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    font-size: 2.25rem;
   }
 `;
 
 const SubTitle = styled.div`
-  font-size: 1.2rem;
-  letter-spacing: 2pt;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
   text-align: justify;
   line-height: 1.5;
   margin-bottom: 2rem;
-  width: 100%;
   color: ${({ theme }) => theme.text_primary + 95};
-  @media (max-width: 960px) {
-    text-align: justify;
-  }
-  @media (max-width: 639px) {
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 1.5rem;
     text-align: justify;
-    letter-spacing: 1pt;
   }
-  @media (max-width: 349px) {
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 1.25rem;
+    letter-spacing: 0.09375rem;
+    margin-bottom: 1.75rem;
     text-align: justify;
-    font-size: 0.8rem;
-    letter-spacing: 0.5pt;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 1.375rem;
+    letter-spacing: 0.1125rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    font-size: 1.5rem;
+    letter-spacing: 0.120rem;
+    margin-bottom: 2.5rem;
+    text-align: justify;
   }
 `;
 
@@ -223,41 +361,63 @@ const ResumeButton = styled.a`
   appearance: button;
   text-decoration: none;
   width: 100%;
-  max-width: 200px;
+  max-width: 12.5rem;
   text-align: center;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(
     225deg,
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  box-shadow: 1.25rem 1.25rem 3.75rem #1f2634, -1.25rem -1.25rem 3.75rem #1f2634;
   border-radius: 1rem;
-  font-weight: 900;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
   &:hover {
     transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
-    box-shadow: 20px 20px 60px #1f2634;
+    box-shadow: 1.25rem 1.25rem 3.75rem #1f2634;
     filter: brightness(1);
   }
-  @media (max-width: 639px) {
-    padding: 14px 0;
-    font-size: 20px;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    max-width: 10rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    border-radius: 0.75rem;
   }
-  @media (max-width: 349px) {
-    padding: 12px 0;
-    font-size: 18px;
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    max-width: 11rem;
+    padding: 0.8125rem 0;
+    font-size: 1.125rem;
+    border-radius: 0.875rem;
   }
-  color: white;
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    max-width: 11.875rem;
+    padding: 0.875rem 0;
+    font-size: 1.25rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    max-width: 12.5rem;
+    padding: 0.9375rem 0;
+    font-size: 1.375rem;
+  }
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
-  left: 0;
-  width: 450px;
-  height: 450px;
+  width: 28.125rem;
+  height: 28.125rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -268,88 +428,116 @@ const ImageWrapper = styled.div`
 
   @keyframes float {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-1.25rem);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(0);
     }
   }
 
-  @media (max-width: 960px) {
-    max-width: 380px;
-    max-height: 380px;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    width: 15.625rem;
+    height: 15.625rem;
   }
 
-  @media (max-width: 639px) {
-    max-width: 250px;
-    max-height: 250px;
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 23.75rem;
+    height: 23.75rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    width: 28.125rem;
+    height: 28.125rem;
   }
 `;
 
 const Img = styled.img`
   position: relative;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
   will-change: transform;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
   &:hover {
     border-color: ${({ theme }) => theme.primary};
-    box-shadow: 0 0 30px rgba(23, 92, 230, 0.2);
-    filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.4));
-  }
-
-  @media (max-width: 960px) {
-    max-width: 380px;
-    max-height: 380px;
-  }
-
-  @media (max-width: 639px) {
-    max-width: 250px;
-    max-height: 250px;
-  }
-
-  @media (max-width: 349px) {
-    max-width: 200px;
-    max-height: 200px;
+    box-shadow: 0 0 1.875rem rgba(23, 92, 230, 0.2);
+    filter: drop-shadow(0 0.5rem 1.5625rem rgba(0, 0, 0, 0.4));
   }
 `;
 
 const HeroBg = styled.div`
   position: absolute;
   display: flex;
-  justify-content: end;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  justify-content: flex-end;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   overflow: hidden;
-  padding: 0 30px;
-  top: 60%;
-  left: 49%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  @media (max-width: 960px) {
+  padding: 0 1.875rem;
+  z-index: -1;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     justify-content: center;
     padding: 0;
+    width: 90%;
+    height: 90%;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    justify-content: center;
+    padding: 0 1rem;
+    width: 95%;
+    height: 95%;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 0 1.5rem;
+    width: 98%;
+    height: 98%;
+    transform: translate(-43%, -35%);
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    padding: 0 1.875rem;
+    width: 100%;
+    height: 100%;
+    transform: translate(-43%, -30%);
   }
 `;
 
 const SocialMediaIcons = styled.div`
   display: flex;
   justify-content: start;
-  gap: 16px;
+  gap: 1rem;
   margin-bottom: 2rem;
-  @media (max-width: 639px) {
-    gap: 12px;
+
+  @media only screen and (max-width: 767px) {
+    gap: 0.75rem;
   }
 `;
 
@@ -357,6 +545,7 @@ const SocialMediaIcon = styled.a`
   display: inline-block;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
   &:hover {
     color: ${({ theme }) => theme.primary};
     transform: scale(1.2);
@@ -365,8 +554,8 @@ const SocialMediaIcon = styled.a`
 
 const RotatingIconsBackground = styled.div`
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -374,24 +563,28 @@ const RotatingIconsBackground = styled.div`
   z-index: 0;
   pointer-events: none;
 
-  @media screen and (max-width: 1024px) {
-    width: 550px;
-    height: 550px;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    width: 21.875rem;
+    height: 21.875rem;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 500px;
-    height: 500px;
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 31.25rem;
+    height: 31.25rem;
   }
 
-  @media screen and (max-width: 480px) {
-    width: 400px;
-    height: 400px;
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    width: 34.375rem;
+    height: 34.375rem;
   }
 
-  @media screen and (max-width: 349px) {
-    width: 300px;
-    height: 300px;
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    width: 37.5rem;
+    height: 37.5rem;
   }
 
   @keyframes rotate {
@@ -405,47 +598,59 @@ const RotatingIconsBackground = styled.div`
 
   @keyframes cosmic-pulse {
     0% {
-      filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.6)) brightness(1);
+      filter: drop-shadow(0 0 0.5rem rgba(138, 43, 226, 0.6)) brightness(1);
     }
     50% {
-      filter: drop-shadow(0 0 12px rgba(138, 43, 226, 0.8)) brightness(1.2);
+      filter: drop-shadow(0 0 0.75rem rgba(138, 43, 226, 0.8)) brightness(1.2);
     }
     100% {
-      filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.6)) brightness(1);
+      filter: drop-shadow(0 0 0.5rem rgba(138, 43, 226, 0.6)) brightness(1);
     }
   }
 
   img {
     position: absolute;
-    width: 45px;
-    height: 45px;
-    border-radius: 8px;
-    padding: 6px;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 0.5rem;
+    padding: 0.375rem;
     transition: all 0.5s ease;
     pointer-events: auto;
-    filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.3)) brightness(0.9);
+    filter: drop-shadow(0 0 0.3125rem rgba(138, 43, 226, 0.3)) brightness(0.9);
     animation: cosmic-pulse 3s ease-in-out infinite;
     animation-delay: calc(var(--delay) * 0.4s);
 
-    @media screen and (max-width: 768px) {
-      width: 35px;
-      height: 35px;
+    /* ========== Mobile Devices (portrait and landscape) ========== */
+    @media only screen and (max-width: 767px) {
+      width: 1.5625rem;
+      height: 1.5625rem;
+      padding: 0.1875rem;
     }
 
-    @media screen and (max-width: 480px) {
-      width: 28px;
-      height: 28px;
+    /* ========== Tablet Devices (portrait and landscape) ========== */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.3125rem;
     }
 
-    @media screen and (max-width: 349px) {
-      width: 24px;
-      height: 24px;
-      padding: 4px;
+    /* ========== Laptop Devices (portrait and landscape) ========== */
+    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.34375rem;
+    }
+
+    /* ========== Desktop Devices (portrait and landscape) ========== */
+    @media only screen and (min-width: 1440px) {
+      width: 2.8125rem;
+      height: 2.8125rem;
+      padding: 0.375rem;
     }
 
     &:hover {
       transform: scale(1.2) rotate(-10deg);
-      filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.9)) brightness(1.3);
+      filter: drop-shadow(0 0 0.9375rem rgba(138, 43, 226, 0.9)) brightness(1.3);
       z-index: 10;
     }
   }
@@ -453,35 +658,39 @@ const RotatingIconsBackground = styled.div`
   ${[...Array(8)]
     .map((_, i) => {
       const angle = i * 45 * (Math.PI / 180);
-      const radius = 280;
-      const x = Math.cos(angle) * radius;
-      const y = Math.sin(angle) * radius;
+      const baseRadius = 17.5;
+      const x = Math.cos(angle) * baseRadius;
+      const y = Math.sin(angle) * baseRadius;
 
       return `
       img:nth-child(${i + 1}) {
-        left: calc(50% + ${x}px);
-        top: calc(50% + ${y}px);
+        left: calc(50% + ${x}rem);
+        top: calc(50% + ${y}rem);
         transform: translate(-50%, -50%);
         --delay: ${i};
 
-        @media screen and (max-width: 1024px) {
-          left: calc(50% + ${x * 0.85}px);
-          top: calc(50% + ${y * 0.85}px);
+        /* ========== Mobile Devices (portrait and landscape) ========== */
+        @media only screen and (max-width: 767px) {
+          left: calc(50% + ${x * 0.55}rem);
+          top: calc(50% + ${y * 0.55}rem);
         }
 
-        @media screen and (max-width: 768px) {
-          left: calc(50% + ${x * 0.8}px);
-          top: calc(50% + ${y * 0.8}px);
+        /* ========== Tablet Devices (portrait and landscape) ========== */
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          left: calc(50% + ${x * 0.9}rem);
+          top: calc(50% + ${y * 0.9}rem);
         }
 
-        @media screen and (max-width: 480px) {
-          left: calc(50% + ${x * 0.6}px);
-          top: calc(50% + ${y * 0.6}px);
+        /* ========== Laptop Devices (portrait and landscape) ========== */
+        @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+          left: calc(50% + ${x * 0.85}rem);
+          top: calc(50% + ${y * 0.85}rem);
         }
 
-        @media screen and (max-width: 349px) {
-          left: calc(50% + ${x * 0.45}px);
-          top: calc(50% + ${y * 0.45}px);
+        /* ========== Desktop Devices (portrait and landscape) ========== */
+        @media only screen and (min-width: 1440px) {
+          left: calc(50% + ${x}rem);
+          top: calc(50% + ${y}rem);
         }
       }
     `;
@@ -583,12 +792,6 @@ const Hero = () => {
                     />
                   </RotatingIconsBackground>
                   <Img
-                    style={{
-                      width: "400px",
-                      height: "400px",
-                      position: "relative",
-                      zIndex: 2,
-                    }}
                     src={miguel_enrique_dasalla}
                     alt="Miguel Enrique Dasalla"
                   />

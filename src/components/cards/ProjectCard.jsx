@@ -116,7 +116,6 @@ const Description = styled.div`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  text-align: justify;
 `;
 
 const ProjectCards = ({ project, setOpenModal }) => {

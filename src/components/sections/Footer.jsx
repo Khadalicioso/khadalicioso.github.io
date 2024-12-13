@@ -12,7 +12,7 @@ const FooterContainer = styled.div`
 
 const FooterWrapper = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 14px;

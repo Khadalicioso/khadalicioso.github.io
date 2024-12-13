@@ -18,19 +18,50 @@ const AboutContainer = styled.div`
 const AboutContent = styled.div`
   width: 100%;
   margin-top: 5%;
-  max-width: 1100px;
-  padding: 80px 20px;
+  max-width: 1200px;
+  padding: 5rem 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    padding: 4rem 1rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 4rem 1.5rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 4.5rem 2rem;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 3.5em;
+  font-size: 3.5rem;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: ${({ theme }) => theme.text_primary};
   text-align: center;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 2.5rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 3rem;
+  }
 `;
 
 const Description = styled.p`
@@ -38,11 +69,20 @@ const Description = styled.p`
   font-weight: 500;
   text-align: justify;
   width: 100%;
-  letter-spacing: 1pt;
-  margin-bottom: 50px;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 3.125rem;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
     text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 0.9375rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -51,59 +91,91 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
-  max-width: 1200px;
+  gap: 1.875rem;
+  margin-top: 1.25rem;
+  max-width: 75rem;
   width: 100%;
 
-  @media (min-width: 1024px) {
-    flex-wrap: nowrap;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    gap: 1.25rem;
+    margin-top: 1rem;
   }
 `;
 
 const Card = styled.div`
   flex: 1;
   background: rgba(17, 25, 40, 0.83);
-  border-radius: 20px;
-  padding: 30px 20px;
-  border: 0.1px solid rgb(133, 76, 230);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  backdrop-filter: blur(12px);
+  border-radius: 1.25rem;
+  padding: 1.875rem 1.25rem;
+  border: 0.00625rem solid rgb(133, 76, 230);
+  box-shadow: rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem;
+  backdrop-filter: blur(0.75rem);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
-  max-width: 380px;
+  min-width: 20rem;
+  max-width: 23.75rem;
 
-  @media (min-width: 1024px) {
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    min-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    min-width: 21.875rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) {
     min-width: unset;
   }
 `;
 
 const CardIcon = styled.div`
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const CardTitle = styled.h2`
   font-size: 1.3rem;
   font-weight: 900;
   color: ${({ theme }) => theme.text_primary};
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   text-align: center;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
 `;
 
 const CardDescription = styled.p`
   font-size: 0.875rem;
-  letter-spacing: 1pt;
+  letter-spacing: 0.0625rem;
   color: ${({ theme }) => theme.text_secondary};
   text-align: center;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 0.8125rem;
+  }
 `;
 
 const About = () => {
@@ -122,9 +194,13 @@ const About = () => {
             <CardIcon>
               <img
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "6.25rem",
+                  height: "6.25rem",
                   position: "relative",
+                  "@media only screen and (max-width: 767px)": {
+                    width: "5rem",
+                    height: "5rem",
+                  },
                 }}
                 src={frontend}
                 alt="Frontend Development"
@@ -141,9 +217,13 @@ const About = () => {
             <CardIcon>
               <img
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "6.25rem",
+                  height: "6.25rem",
                   position: "relative",
+                  "@media only screen and (max-width: 767px)": {
+                    width: "5rem",
+                    height: "5rem",
+                  },
                 }}
                 src={responsive}
                 alt="Responsive Design"
@@ -160,9 +240,13 @@ const About = () => {
             <CardIcon>
               <img
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "6.25rem",
+                  height: "6.25rem",
                   position: "relative",
+                  "@media only screen and (max-width: 767px)": {
+                    width: "5rem",
+                    height: "5rem",
+                  },
                 }}
                 src={backend}
                 alt="Backend Development"

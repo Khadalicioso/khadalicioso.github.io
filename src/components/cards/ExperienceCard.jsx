@@ -6,16 +6,20 @@ const Top = styled.div`
   width: 100%;
   display: flex;
   max-width: 100%;
-  gap: 12px;
+  gap: 0.75rem;
 `;
 
 const Image = styled.img`
-  height: 50px;
-  border-radius: 10px;
-  margin-top: 4px;
+  height: 3.125rem;
+  border-radius: 0.625rem;
+  margin-top: 0.25rem;
 
-  @media only screen and (max-width: 768px) {
-    height: 40px;
+  @media only screen and (max-width: 767px) {
+    height: 2.5rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    height: 2.75rem;
   }
 `;
 
@@ -23,45 +27,62 @@ const Body = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 `;
 
 const Role = styled.div`
-  font-size: 1.2rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.text_primary + 99};
+  line-height: 1.4;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 15px;
+  @media only screen and (max-width: 767px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 1.125rem;
   }
 `;
 
 const Company = styled.div`
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_secondary + 99};
+  line-height: 1.4;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 0.9375rem;
   }
 `;
 
 const Date = styled.div`
-  font-size: 0.8rem;
-  font-weight: 500px;
+  font-size: 0.875rem;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 80};
+  line-height: 1.4;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.75rem;
   }
 `;
 
 const Description = styled.div`
   width: 100%;
-  font-size: 0.8rem;
-  letter-spacing: 1pt;
-  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  line-height: 1.6;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 
   ul {
     list-style: none;
@@ -70,35 +91,40 @@ const Description = styled.div`
   }
 
   li {
-    margin-bottom: 8px;
+    margin-bottom: 0.75rem;
     position: relative;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 
     &:before {
       content: "•";
       position: absolute;
       left: 0;
+      color: ${({ theme }) => theme.primary};
     }
   }
 `;
 
 const Skills = styled.div`
   width: 100%;
-  display: flex;
-  gap: 12px;
-  margin-top: -10px;
+  margin-top: 0.5rem;
 `;
 
 const Skill = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 99};
+  line-height: 1.4;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 0.8125rem;
+  }
 `;
 
 const ItemWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 `;
 
 const ExperienceCard = ({ experience }) => {
@@ -116,22 +142,22 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         display: "flex",
         flexDirection: "column",
-        gap: "12px",
+        gap: "0.75rem",
         background: "#1d1836",
         color: "#fff",
-        boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-        // backdropFilter: "blur(3px) saturate(106%)",
+        boxShadow: "rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem",
         backgroundColor: "rgba(17, 25, 40, 0.83)",
-        border: "1px solid rgba(255, 255, 255, 0.125)",
-        borderRadius: "6px",
+        border: "0.0625rem solid rgba(255, 255, 255, 0.125)",
+        borderRadius: "0.375rem",
+        padding: "1.5rem",
       }}
       contentArrowStyle={{
-        borderRight: "7px solid  rgba(255, 255, 255, 0.3)",
+        borderRight: "0.4375rem solid rgba(255, 255, 255, 0.3)",
       }}
       date={experience.date}
     >
       <Top>
-        <Image src={experience.img} />
+        <Image src={experience.img} alt={`${experience.company} logo`} />
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
@@ -150,12 +176,11 @@ const ExperienceCard = ({ experience }) => {
         )}
         {experience?.skills && (
           <>
-            <br />
             <Skills>
-              <b>Skills:</b>
+              <b>Skills/Technologies Used:</b>
               <ItemWrapper>
                 {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
+                  <Skill key={index}>• {skill}</Skill>
                 ))}
               </ItemWrapper>
             </Skills>

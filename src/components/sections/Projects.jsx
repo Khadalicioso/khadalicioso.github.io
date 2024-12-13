@@ -26,11 +26,18 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 80px 20px;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    padding: 4rem 1rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 4rem 1.5rem;
   }
 `;
 
@@ -40,6 +47,18 @@ const Title = styled.div`
   font-weight: 900;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 2.5rem;
+    margin-top: 1.125rem;
+  }
 `;
 
 const Desc = styled.div`
@@ -78,11 +97,11 @@ const StatusDot = styled.div`
 const CarouselContainer = styled.div`
   width: 100%;
   position: relative;
-  margin-top: 30px;
-  padding: 0 25px;
+  margin-top: 1.875rem;
+  padding: 0 1.5625rem;
 
   .slick-list {
-    margin: 0 -10px;
+    margin: 0 -0.625rem;
     overflow: hidden;
   }
 
@@ -96,16 +115,16 @@ const CarouselContainer = styled.div`
     opacity: 0.5;
     transition: all 0.5s ease;
     transform: scale(0.85);
-    filter: blur(2px);
+    filter: blur(0.125rem);
     pointer-events: none;
 
     &.slick-active {
       opacity: 0.5;
       transform: scale(0.85);
-      filter: blur(2px);
+      filter: blur(0.125rem);
       pointer-events: none;
 
-      @media (max-width: 1000px) {
+      @media only screen and (max-width: 62.5rem) {
         opacity: 1;
         transform: scale(1);
         filter: blur(0);
@@ -122,18 +141,36 @@ const CarouselContainer = styled.div`
   }
 
   .slick-slide > div {
-    padding: 0 10px;
-    @media (max-width: 1000px) {
+    padding: 0 0.625rem;
+
+    @media only screen and (max-width: 62.5rem) {
       display: flex;
       justify-content: center;
       margin: 0 auto;
       width: 100%;
-      max-width: 500px;
+      max-width: 31.25rem;
     }
   }
 
-  @media (max-width: 1024px) {
-    padding: 0;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    padding: 0 0.625rem;
+    margin-top: 1.25rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 1rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 0 1.25rem;
+  }
+
+  /* ========== Desktop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1440px) {
+    padding: 0 1.5625rem;
   }
 `;
 
@@ -186,7 +223,7 @@ const Projects = ({ openModal, setOpenModal }) => {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -198,7 +235,7 @@ const Projects = ({ openModal, setOpenModal }) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

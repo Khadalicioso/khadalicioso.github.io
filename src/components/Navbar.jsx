@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
-  height: 80px;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,26 +17,18 @@ const Nav = styled.div`
 
 const ColorText = styled.div`
   color: ${({ theme }) => theme.primary};
-  font-size: 32px;
+  font-size: 2rem;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 320px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 28px;
+  @media only screen and (max-width: 767px) {
+    font-size: 1.5rem;
   }
 `;
 
 const NavbarContainer = styled.div`
   width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
+  max-width: 90rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,71 +40,42 @@ const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   width: 80%;
-  padding: 0 6px;
+  padding: 0 0.375rem;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease-in-out;
   white-space: nowrap;
-  gap: 2px;
+  gap: 0.125rem;
 
-  @media screen and (max-width: 320px) {
-    font-size: 8px;
-    width: 50%;
-    gap: 1px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-    width: 75%;
-    padding: 0 4px;
-    gap: 1px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-    width: 80%;
-    padding: 0 5px;
-    gap: 2px;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
+    width: 60%;
+    padding: 0 0.25rem;
+    gap: 0.0625rem;
   }
 `;
 
 const NameText = styled.span`
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 320px) {
-    font-size: 8px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
   }
 `;
 
 const SlashText = styled.div`
   color: ${({ theme }) => theme.primary};
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: all 0.3s ease-in-out;
   display: inline-block;
   white-space: nowrap;
 
-  @media screen and (max-width: 320px) {
-    font-size: 8px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
   }
 `;
 
@@ -121,11 +84,11 @@ const NavItems = styled.ul`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 32px;
-  padding: 0 6px;
+  gap: 2rem;
+  padding: 0 0.375rem;
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display: none;
   }
 `;
@@ -140,16 +103,16 @@ export const NavLink = styled.a`
   text-align: center;
   width: fit-content;
 
-  @media screen and (max-width: 768px) {
-    padding: 4px 0;
+  @media only screen and (max-width: 767px) {
+    padding: 0.25rem 0;
   }
 
   &::after {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -4px;
+    height: 0.125rem;
+    bottom: -0.25rem;
     left: 50%;
     background: ${({ theme }) => theme.primary};
     transition: all 0.3s ease;
@@ -182,8 +145,8 @@ const MobileIcon = styled.div`
   cursor: pointer;
 
   .menu-icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     position: relative;
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
@@ -191,25 +154,25 @@ const MobileIcon = styled.div`
     span {
       display: block;
       position: absolute;
-      height: 2px;
+      height: 0.125rem;
       width: 100%;
       background: ${({ theme }) => theme.text_primary};
-      border-radius: 10px;
+      border-radius: 0.625rem;
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
       transition: all 0.3s ease-in-out;
 
       &:nth-child(1) {
-        top: 4px;
+        top: 0.25rem;
       }
 
       &:nth-child(2) {
-        top: 11px;
+        top: 0.6875rem;
       }
 
       &:nth-child(3) {
-        top: 18px;
+        top: 1.125rem;
       }
     }
   }
@@ -218,24 +181,24 @@ const MobileIcon = styled.div`
     .menu-icon {
       span {
         &:nth-child(1) {
-          top: 11px;
+          top: 0.6875rem;
           transform: rotate(135deg);
         }
 
         &:nth-child(2) {
           opacity: 0;
-          left: -60px;
+          left: -3.75rem;
         }
 
         &:nth-child(3) {
-          top: 11px;
+          top: 0.6875rem;
           transform: rotate(-135deg);
         }
       }
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     display: block;
   }
 `;
@@ -245,19 +208,19 @@ const MobileMenu = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 12px 40px 24px 40px;
+  gap: 1rem;
+  padding: 0.75rem 2.5rem 1.5rem 2.5rem;
   background: ${({ theme }) => theme.card_light + 99};
   position: absolute;
-  top: 80px;
+  top: 5rem;
   right: 0;
   transition: all 0.3s ease-in-out;
   transform-origin: top;
   transform: scaleY(0);
   opacity: 0;
   visibility: hidden;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 1.25rem 1.25rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
 
   &.open {

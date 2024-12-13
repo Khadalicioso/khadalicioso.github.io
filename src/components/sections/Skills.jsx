@@ -22,19 +22,48 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1350px;
-  padding: 80px 20px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
+  max-width: 90rem;
+  padding: 5rem 1.25rem;
+  gap: 0.75rem;
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    padding: 4rem 1rem;
+    gap: 0.625rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 4rem 1.5rem;
+    gap: 0.75rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 4.5rem 2rem;
   }
 `;
 
 const Title = styled.div`
-  font-size: 3.5em;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: 900;
   color: ${({ theme }) => theme.text_primary};
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 2rem;
+  }
+
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 2.5rem;
+  }
+
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 3rem;
+  }
 `;
 
 const Desc = styled.div`
@@ -42,41 +71,44 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 500;
   color: ${({ theme }) => theme.text_secondary};
+
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 `;
 
 const SkillsContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  padding: 40px;
+  gap: 1.875rem;
+  padding: 2.5rem;
   background: rgba(17, 17, 40, 0.7);
-  border: 2px solid ${({ theme }) => theme.primary};
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  margin-top: 30px;
+  border: 0.125rem solid ${({ theme }) => theme.primary};
+  box-shadow: rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.875rem;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+  /* ========== Mobile Devices (portrait and landscape) ========== */
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.9375rem;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
   }
 
-  @media (max-width: 968px) {
+  /* ========== Tablet Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 30px;
-    gap: 20px;
+    padding: 1.875rem;
+    gap: 1.25rem;
   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-    gap: 15px;
-  }
-
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    gap: 12px;
+  /* ========== Laptop Devices (portrait and landscape) ========== */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem;
   }
 `;
 
@@ -85,26 +117,27 @@ const SkillItem = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.card};
-  border: 1px solid ${({ theme }) => theme.primary};
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 12px;
-  padding: 15px;
+  border: 0.0625rem solid ${({ theme }) => theme.primary};
+  box-shadow: rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem;
+  border-radius: 0.75rem;
+  padding: 0.9375rem;
   transition: all 0.4s ease-in-out;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(23, 92, 230, 0.3);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0 1.5625rem rgba(23, 92, 230, 0.3);
   }
 
   img {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 8px;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin-bottom: 0.5rem;
     transition: all 0.4s ease-in-out;
 
-    @media (max-width: 768px) {
-      width: 35px;
-      height: 35px;
+    /* ========== Mobile Devices (portrait and landscape) ========== */
+    @media only screen and (max-width: 767px) {
+      width: 2.1875rem;
+      height: 2.1875rem;
     }
   }
 
@@ -113,6 +146,11 @@ const SkillItem = styled(motion.div)`
     font-weight: bold;
     color: ${({ theme }) => theme.text_primary};
     text-align: center;
+
+    /* ========== Mobile Devices (portrait and landscape) ========== */
+    @media only screen and (max-width: 767px) {
+      font-size: 0.875rem;
+    }
   }
 `;
 
