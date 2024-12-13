@@ -31,13 +31,13 @@ const Body = styled.div`
 `;
 
 const Role = styled.div`
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary + 99};
   line-height: 1.4;
 
   @media only screen and (max-width: 767px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -52,7 +52,7 @@ const Company = styled.div`
   line-height: 1.4;
 
   @media only screen and (max-width: 767px) {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -61,13 +61,13 @@ const Company = styled.div`
 `;
 
 const Date = styled.div`
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   color: ${({ theme }) => theme.text_secondary + 80};
   line-height: 1.4;
 
   @media only screen and (max-width: 767px) {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
   }
 `;
 
@@ -82,6 +82,7 @@ const Description = styled.div`
 
   @media only screen and (max-width: 767px) {
     font-size: 0.875rem;
+    text-align: justify;
   }
 
   ul {
