@@ -51,8 +51,9 @@ export const Bio = {
   github: "https://github.com/Khadalicioso",
   instagram: "https://www.instagram.com/khadalicioso",
   facebook: "https://www.facebook.com/khadalicioso",
-  linkedin: "/",
-  resume: "/",
+  linkedin: "https://www.linkedin.com/in/miguel-enrique-d-856879341/",
+  resume:
+    "https://drive.google.com/file/d/1tvkTYO63vX5NT2Md6FG4D5PqUfAlJ88S/view?usp=drive_link",
 };
 
 // SKILLS AND TECHNOLOGIES
