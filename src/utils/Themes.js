@@ -9,7 +9,7 @@ export const darkTheme = {
   button: "#854CE6",
   white: "#FFFFFF",
   black: "#000000",
-  // Project status border colors
+  /*========== Project status border colors ==========*/
   border_completed: "#854CE6",
   border_inprogress: "#45c512",
   border_onhold: "#fc4444",
@@ -23,7 +23,7 @@ export const lightTheme = {
   text_secondary: "#48494a",
   card: "#FFFFFF",
   button: "#5c5b5b",
-  // Project status border colors
+  /*========== Project status border colors ==========*/
   border_completed: "#854CE6",
   border_inprogress: "#45c512",
   border_onhold: "#fc4444",
