@@ -45,7 +45,6 @@ const Title = styled.h1`
   font-weight: 900;
   margin-bottom: 1.25rem;
   color: ${({ theme }) => theme.text_primary};
-  text-align: center;
 
   /* ========== Mobile Devices (portrait and landscape) ========== */
   @media only screen and (max-width: 767px) {
@@ -65,8 +64,8 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.063rem;
+  font-weight: normal;
   text-align: justify;
   width: 100%;
   letter-spacing: 0.0625rem;
@@ -203,12 +202,12 @@ const About = () => {
                   },
                 }}
                 src={frontend}
-                alt="Frontend Development"
+                alt="Front-End Development"
               />
             </CardIcon>
-            <CardTitle>Frontend Development</CardTitle>
+            <CardTitle>Front-End Development</CardTitle>
             <CardDescription>
-              Frontend web development adopting new frameworks to satisfy
+              Front-End web development adopting new frameworks to satisfy
               changing needs and keep up with trends. Ensuring browser
               compatibility, visually appealing and user-friendly interfaces.
             </CardDescription>
@@ -249,10 +248,10 @@ const About = () => {
                   },
                 }}
                 src={backend}
-                alt="Backend Development"
+                alt="Back-End Development"
               />
             </CardIcon>
-            <CardTitle>Backend Development</CardTitle>
+            <CardTitle>Back-End Development</CardTitle>
             <CardDescription>
               Leveraging modern approaches to build scalable and secure backends
               that seamlessly communicate with frontend interfaces, meeting the

@@ -349,7 +349,7 @@ const SubTitle = styled.div`
   /* ========== Desktop Devices (portrait and landscape) ========== */
   @media only screen and (min-width: 1440px) {
     font-size: 1.5rem;
-    letter-spacing: 0.120rem;
+    letter-spacing: 0.12rem;
     margin-bottom: 2.5rem;
     text-align: justify;
   }
@@ -726,6 +726,7 @@ const Hero = () => {
                   <div>{splitText(nameText)}</div>
                 </Title>
                 <TextLoop>
+                  I'm a
                   <Span>
                     <Typewriter
                       options={{

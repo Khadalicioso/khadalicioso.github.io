@@ -3,28 +3,27 @@ import styled from "styled-components";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Top = styled.div`
-  width: 100%;
   display: flex;
   max-width: 100%;
   gap: 0.75rem;
 `;
 
-const Image = styled.img`
-  height: 3.125rem;
-  border-radius: 0.625rem;
-  margin-top: 0.25rem;
+// const Image = styled.img`
+//   height: 3.125rem;
+//   border-radius: 0.625rem;
+//   margin-top: 0.25rem;
 
-  @media only screen and (max-width: 767px) {
-    height: 2.5rem;
-  }
+//   @media only screen and (max-width: 767px) {
+//     height: 2.5rem;
+//   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    height: 2.75rem;
-  }
-`;
+//   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+//     height: 2.75rem;
+//   }
+// `;
 
 const Body = styled.div`
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -32,16 +31,16 @@ const Body = styled.div`
 
 const Role = styled.div`
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: bold;
   color: ${({ theme }) => theme.text_primary + 99};
   line-height: 1.4;
 
   @media only screen and (max-width: 767px) {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 `;
 
@@ -50,40 +49,27 @@ const Company = styled.div`
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary + 99};
   line-height: 1.4;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 0.7rem;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    font-size: 0.9375rem;
-  }
 `;
 
-const Date = styled.div`
-  font-size: 1rem;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_secondary + 80};
-  line-height: 1.4;
+// const Date = styled.div`
+//   font-size: 1rem;
+//   font-weight: 500;
+//   color: ${({ theme }) => theme.text_secondary + 80};
+//   line-height: 1.4;
 
-  @media only screen and (max-width: 767px) {
-    font-size: 0.6rem;
-  }
-`;
+//   @media only screen and (max-width: 767px) {
+//     font-size: 0.6rem;
+//   }
+// `;
 
 const Description = styled.div`
   width: 100%;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   letter-spacing: 0.02em;
-  font-weight: 400;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_primary + 99};
   margin-bottom: 0.625rem;
   line-height: 1.6;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 0.875rem;
-    text-align: justify;
-  }
 
   ul {
     list-style: none;
@@ -112,7 +98,7 @@ const Skills = styled.div`
 
 const Skill = styled.div`
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_primary + 99};
   line-height: 1.4;
 
@@ -158,11 +144,11 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
     >
       <Top>
-        <Image src={experience.img} alt={`${experience.company} logo`} />
+        {/* <Image src={experience.img} alt={`${experience.company} logo`} /> */}
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
-          <Date>{experience.date}</Date>
+          {/* <Date>{experience.date}</Date> */}
         </Body>
       </Top>
       <Description>

@@ -36,7 +36,7 @@ const Title = styled.div`
   font-weight: 900;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px 0px 6px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     font-size: 24px;
     margin: 6px 6px 0px 6px;
   }
@@ -47,7 +47,7 @@ const Date = styled.div`
   margin: 2px 6px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary};
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     font-size: 12px;
   }
 `;
@@ -58,7 +58,7 @@ const Desc = styled.div`
   text-align: justify;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     font-size: 14px;
     margin: 6px 6px;
   }
@@ -75,7 +75,7 @@ const Image = styled.img`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   display: block;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     max-width: 500px;
     max-height: 350px;
   }
@@ -90,7 +90,7 @@ const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 8px 0px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     margin: 4px 0px;
   }
 `;
@@ -103,7 +103,7 @@ const Tag = styled.div`
   padding: 4px 8px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary + 20};
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     font-size: 12px;
   }
 `;
@@ -155,7 +155,7 @@ const Button = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.primary + 99};
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     font-size: 12px;
   }
 `;

@@ -45,7 +45,7 @@ import framer from "../images/icons/framer.png";
 
 export const Bio = {
   name: "Miguel Enrique Dasalla",
-  roles: ["Frontend Developer", "Aspiring Backend Developer"],
+  roles: ["Programmer", "Web Developer", "Full-Stack Developer"],
   description:
     "A passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.",
   github: "https://github.com/Khadalicioso",
@@ -167,8 +167,9 @@ export const experiences = [
     company: "Quezon City University",
     date: "2024 - Present",
     desc: [
-      "Developed a system called KOPIBARA, an online coffee ordering system, using ASP.NET Core MVC for a scalable backend, Entity Framework Core for efficient data access, SQL Server for reliable database storage, and Bootstrap for a responsive user interface.",
-      "Developed the Student Information System as a key component of UNILINK: Academic Community Web Application. This subsystem leverages PHP, MySQL, jQuery AJAX, and Bootstrap to efficiently manage student records, attendance, grades, and other academic data.",
+      "Developed a feature-rich online coffee ordering system using ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap.",
+      "Developed a student information system subsystem using PHP and MySQL for the Supersystem called UNILINK: Academic Community Web Application.",
+      "Implementing responsive design and providing best UX for the users of the system.",
     ],
     skills: [
       "HTML",

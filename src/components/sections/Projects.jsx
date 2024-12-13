@@ -66,7 +66,7 @@ const Desc = styled.div`
   font-weight: 500;
   text-align: justify;
   width: 100%;
-  letter-spacing: 1pt;
+  letter-spacing: 0.0625rem;
   margin-bottom: 50px;
   color: ${({ theme }) => theme.text_secondary};
 `;
