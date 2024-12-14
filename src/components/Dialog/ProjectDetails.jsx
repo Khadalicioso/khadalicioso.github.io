@@ -20,48 +20,36 @@ const Container = styled.div`
 const Wrapper = styled.div`
   max-width: 800px;
   width: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
   margin: 50px 12px;
   height: min-content;
   background-color: ${({ theme }) => theme.card};
   color: ${({ theme }) => theme.text_primary};
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   position: relative;
 `;
 
 const Title = styled.div`
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px 0px 6px;
-  @media only screen and (max-width: 767px) {
-    font-size: 24px;
-    margin: 6px 6px 0px 6px;
-  }
 `;
 
 const Date = styled.div`
-  font-size: 16px;
+  font-size: 0.875rem;
   margin: 2px 6px;
-  font-weight: 400;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_secondary};
-  @media only screen and (max-width: 767px) {
-    font-size: 12px;
-  }
 `;
 
 const Desc = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  text-align: justify;
+  font-size: 0.875rem;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px;
-  @media only screen and (max-width: 767px) {
-    font-size: 14px;
-    margin: 6px 6px;
-  }
 `;
 
 const Image = styled.img`
@@ -70,42 +58,26 @@ const Image = styled.img`
   max-height: 500px;
   height: auto;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 0.875rem;
   margin: 30px auto;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   display: block;
-
-  @media only screen and (max-width: 767px) {
-    max-width: 500px;
-    max-height: 350px;
-  }
-
-  @media only screen and (max-width: 480px) {
-    max-width: 400px;
-    max-height: 300px;
-  }
 `;
 
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 8px 0px;
-  @media only screen and (max-width: 767px) {
-    margin: 4px 0px;
-  }
 `;
 
 const Tag = styled.div`
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: ${({ theme }) => theme.primary};
   margin: 4px;
   padding: 4px 8px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary + 20};
-  @media only screen and (max-width: 767px) {
-    font-size: 12px;
-  }
 `;
 
 const ButtonGroup = styled.div`
@@ -119,7 +91,7 @@ const Button = styled.a`
   width: 100%;
   text-align: center;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   color: ${({ theme }) => theme.text_primary};
   padding: 12px 16px;
   border-radius: 8px;
@@ -154,9 +126,6 @@ const Button = styled.a`
   gap: 8px;
   &:hover {
     background-color: ${({ theme }) => theme.primary + 99};
-  }
-  @media only screen and (max-width: 767px) {
-    font-size: 12px;
   }
 `;
 

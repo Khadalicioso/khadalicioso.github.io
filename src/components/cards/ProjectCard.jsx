@@ -20,7 +20,7 @@ const Card = styled.div`
   height: 490px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   border: 2px solid
     ${({ theme, status }) => {
@@ -50,10 +50,10 @@ const Card = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   height: auto;
   background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
+  border-radius: 0.875rem;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
@@ -84,8 +84,8 @@ const Details = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: ${({ theme }) => theme.text_secondary};
   overflow: hidden;
   display: -webkit-box;
@@ -97,17 +97,14 @@ const Title = styled.div`
 `;
 
 const Date = styled.div`
-  font-size: 12px;
+  font-size: 0.875rem;
   margin-left: 2px;
-  font-weight: 400;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_secondary + 80};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
 `;
 
 const Description = styled.div`
-  font-weight: 400;
+  font-weight: normal;
   color: ${({ theme }) => theme.text_secondary + 99};
   overflow: hidden;
   margin-top: 8px;
