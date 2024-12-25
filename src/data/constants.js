@@ -15,6 +15,7 @@ import netflix_clone from "../images/logo/netflix_clone.jpg";
 import debug_fitness from "../images/logo/debug_fitness.jpg";
 import green_tea from "../images/logo/green_tea.jpg";
 import tiktok_clone from "../images/logo/tiktok_clone.jpg";
+import youtube_clone from "../images/logo/youtube_clone.jpg";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -195,6 +196,25 @@ export const experiences = [
 // PROJECTS
 
 export const projects = [
+  {
+    id: 14,
+    title: "YouTube Clone",
+    date: "December 2024",
+    description:
+      "A full-featured YouTube clone combining Vue.js, Laravel, and Tailwind CSS. Features video streaming, user authentication, comments, and real-time interactions in a modern, responsive interface.",
+    image: youtube_clone,
+    tags: [
+      "Vue JS",
+      "JavaScript",
+      "Laravel",
+      "Inertia JS,",
+      "Tailwind CSS",
+      "PHP",
+    ],
+    source: "https://github.com/Khadalicioso/youtube_clone.git",
+    demo: "",
+    status: "completed",
+  },
   {
     id: 13,
     title: "TikTok Clone",
