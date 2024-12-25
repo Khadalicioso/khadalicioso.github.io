@@ -14,6 +14,7 @@ import carhub from "../images/logo/carhub.jpg";
 import netflix_clone from "../images/logo/netflix_clone.jpg";
 import debug_fitness from "../images/logo/debug_fitness.jpg";
 import green_tea from "../images/logo/green_tea.jpg";
+import tiktok_clone from "../images/logo/tiktok_clone.jpg";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -25,6 +26,7 @@ import tailwind from "../images/icons/tailwind.png";
 import react from "../images/icons/react.png";
 import reactquery from "../images/icons/reactquery.png";
 import vue from "../images/icons/vue.png";
+import nuxt from "../images/icons/nuxt.png";
 import ts from "../images/icons/ts.png";
 import jquery from "../images/icons/jquery.png";
 import next from "../images/icons/next.png";
@@ -92,6 +94,10 @@ export const skills = [
       {
         name: "Vue JS",
         image: vue,
+      },
+      {
+        name: "Nuxt JS",
+        image: nuxt,
       },
       {
         name: "Typescript",
@@ -189,6 +195,26 @@ export const experiences = [
 // PROJECTS
 
 export const projects = [
+  {
+    id: 13,
+    title: "TikTok Clone",
+    date: "December 2024",
+    description:
+      "A modern TikTok clone built with cutting-edge technologies, offering a seamless social media experience.",
+    image: tiktok_clone,
+    tags: [
+      "Vue JS",
+      "Nuxt JS",
+      "JavaScript",
+      "Laravel API",
+      "Pinia",
+      "Tailwind CSS",
+      "Axios",
+    ],
+    source: "https://github.com/Khadalicioso/tiktok_clone.git",
+    demo: "",
+    status: "completed",
+  },
   {
     id: 12,
     title: "Green Tea",
