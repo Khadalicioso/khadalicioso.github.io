@@ -32,7 +32,10 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Copyright>&copy; 2024 Miguel Enrique. All Rights Reserved.</Copyright>
+        <Copyright>
+          &copy; {new Date().getFullYear()} Miguel Enrique Dasalla. All Rights
+          Reserved.
+        </Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
