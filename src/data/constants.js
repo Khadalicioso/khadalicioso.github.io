@@ -16,6 +16,7 @@ import debug_fitness from "../images/logo/debug_fitness.jpg";
 import green_tea from "../images/logo/green_tea.jpg";
 import tiktok_clone from "../images/logo/tiktok_clone.jpg";
 import youtube_clone from "../images/logo/youtube_clone.jpg";
+import facebook_clone from "../images/logo/facebook_clone.jpg";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -196,6 +197,18 @@ export const experiences = [
 // PROJECTS
 
 export const projects = [
+  {
+    id: 15,
+    title: "Facebook Clone",
+    date: "December 2024",
+    description:
+      "This is a full-featured Facebook clone built with modern web technologies. It demonstrates the implementation of core Facebook features using a powerful tech stack including Vue.js, Laravel, Inertia.js, Tailwind CSS, and Pinia for state management.",
+    image: facebook_clone,
+    tags: ["Vue JS", "Laravel", "Inertia JS", "Tailwind CSS,", "Pinia"],
+    source: "https://github.com/Khadalicioso/facebook_clone.git",
+    demo: "",
+    status: "completed",
+  },
   {
     id: 14,
     title: "YouTube Clone",
