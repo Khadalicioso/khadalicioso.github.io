@@ -10,7 +10,7 @@
 
 ## 🚀 About Me
 
-I'm Miguel Enrique Dasalla, a passionate Full-Stack Web Developer dedicated to creating exceptional digital experiences. With a keen eye for detail and a commitment to clean, efficient code, I transform complex problems into elegant solutions.
+I'm Miguel Enrique Dasalla, a passionate Full-Stack Developer dedicated to creating exceptional digital experiences. With a keen eye for detail and a commitment to clean, efficient code, I transform complex problems into elegant solutions.
 
 ### 💫 What I Do
 
