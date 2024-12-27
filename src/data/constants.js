@@ -1,22 +1,24 @@
 // IMPORTED LOGO FROM IMAGES
 
 import qcu from "../images/logo/qcu.png";
-import landing_pages from "../images/logo/landing_pages.jpg";
-import javascript_mastery from "../images/logo/javascript_mastery.jpg";
-import the_curious_mind from "../images/logo/the_curious_mind.jpg";
-import read_right from "../images/logo/read_right.jpg";
-import kpl_hotel_and_resort from "../images/logo/kpl_hotel_and_resort.jpg";
-import kopibara from "../images/logo/kopibara.jpg";
-import unilink from "../images/logo/unilink.jpg";
-import yumtopia from "../images/logo/yumtopia.jpg";
-import opulence from "../images/logo/opulence.jpg";
-import carhub from "../images/logo/carhub.jpg";
-import netflix_clone from "../images/logo/netflix_clone.jpg";
-import debug_fitness from "../images/logo/debug_fitness.jpg";
-import green_tea from "../images/logo/green_tea.jpg";
-import tiktok_clone from "../images/logo/tiktok_clone.jpg";
-import youtube_clone from "../images/logo/youtube_clone.jpg";
-import facebook_clone from "../images/logo/facebook_clone.jpg";
+import modern_web_development_projects from "../images/logo/modern_web_development_projects.png";
+import javascript_mastery from "../images/logo/javascript_mastery.png";
+import the_curious_mind from "../images/logo/the_curious_mind.png";
+import read_right from "../images/logo/read_right.png";
+import kpl_hotel_and_resort from "../images/logo/kpl_hotel_and_resort.png";
+import kopibara from "../images/logo/kopibara.png";
+import unilink from "../images/logo/unilink.png";
+import yumtopia from "../images/logo/yumtopia.png";
+import opulence from "../images/logo/opulence.png";
+import carhub from "../images/logo/carhub.png";
+import netflix_clone from "../images/logo/netflix_clone.png";
+import debug_fitness from "../images/logo/debug_fitness.png";
+import green_tea from "../images/logo/green_tea.png";
+import tiktok_clone from "../images/logo/tiktok_clone.png";
+import youtube_clone from "../images/logo/youtube_clone.png";
+import facebook_clone from "../images/logo/facebook_clone.png";
+import instagram_clone from "../images/logo/instagram_clone.png";
+import spotify_clone from "../images/logo/spotify_clone.png";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -197,6 +199,37 @@ export const experiences = [
 // PROJECTS
 
 export const projects = [
+  {
+    id: 17,
+    title: "Spotify Clone",
+    date: "December 2024",
+    description:
+      "This project is a Spotify Clone built using modern web technologies. It aims to replicate the core functionalities of Spotify, providing a seamless music streaming experience. The application is developed with a focus on performance and user experience, leveraging the power of Vue 3, Vite, Tailwind CSS, Pinia, and JavaScript.",
+    image: spotify_clone,
+    tags: ["Vue JS,", "Vite", "Tailwind CSS,", "Pinia,", "Javascript"],
+    source: "https://github.com/Khadalicioso/spotify_clone.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 16,
+    title: "Instagram Clone",
+    date: "December 2024",
+    description:
+      "This is a full-stack Instagram clone built using modern web technologies. The project aims to replicate the core functionalities of Instagram, providing a platform for users to share photos, follow other users, and interact with posts.",
+    image: instagram_clone,
+    tags: [
+      "Vue JS,",
+      "Tailwind CSS",
+      "Javascript",
+      "Laravel,",
+      "Inertia JS",
+      "PHP",
+    ],
+    source: "https://github.com/Khadalicioso/instagram_clone.git",
+    demo: "",
+    status: "completed",
+  },
   {
     id: 15,
     title: "Facebook Clone",
@@ -391,7 +424,7 @@ export const projects = [
   {
     id: 1,
     title: "JavaScript Mastery",
-    date: "June 2024 - December 2024",
+    date: "June 2024 - Present",
     description:
       "A comprehensive collection of JavaScript projects designed to help me master web development through hands-on practice. This repository contains various projects ranging from simple utilities to complex games and applications.",
     image: javascript_mastery,
@@ -399,15 +432,15 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/javascript_mastery_projects_collection.git",
     demo: "",
-    status: "onhold",
+    status: "inprogress",
   },
   {
     id: 0,
-    title: "Landing Page Collection",
-    date: "June 2024 - December 2024",
+    title: "Modern Web Development Projects",
+    date: "June 2024 - Present",
     description:
       "A collection of modern, responsive landing pages and web applications built with various technologies.",
-    image: landing_pages,
+    image: modern_web_development_projects,
     tags: [
       "HTML",
       "CSS",
@@ -419,6 +452,6 @@ export const projects = [
     source:
       "https://github.com/Khadalicioso/modern_web_development_projects.git",
     demo: "",
-    status: "onhold",
+    status: "inprogress",
   },
 ];
