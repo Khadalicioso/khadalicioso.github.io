@@ -219,7 +219,7 @@ export const projects = [
     description:
       "This project is a Spotify Clone built using modern web technologies. It aims to replicate the core functionalities of Spotify, providing a seamless music streaming experience. The application is developed with a focus on performance and user experience, leveraging the power of Vue 3, Vite, Tailwind CSS, Pinia, and JavaScript.",
     image: spotify_clone,
-    tags: ["Vue JS,", "Vite", "Tailwind CSS,", "Pinia,", "Javascript"],
+    tags: ["Vue JS", "Vite", "Tailwind CSS,", "Pinia,", "Javascript"],
     source: "https://github.com/Khadalicioso/spotify_clone.git",
     demo: "",
     status: "completed",
