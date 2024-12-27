@@ -19,6 +19,7 @@ import youtube_clone from "../images/logo/youtube_clone.png";
 import facebook_clone from "../images/logo/facebook_clone.png";
 import instagram_clone from "../images/logo/instagram_clone.png";
 import spotify_clone from "../images/logo/spotify_clone.png";
+import nuxtcipes from "../images/logo/nuxtcipes.png";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -199,6 +200,18 @@ export const experiences = [
 // PROJECTS
 
 export const projects = [
+  {
+    id: 18,
+    title: "Nuxtcipes",
+    date: "December 2024",
+    description:
+      "The Recipe Web Application is designed to help users explore a wide variety of recipes from different cuisines. Users can search for recipes, view detailed instructions, and save their favorite recipes for easy access. The application is built with a focus on performance and user experience, ensuring that users can quickly find and manage their culinary interests.",
+    image: nuxtcipes,
+    tags: ["Vue JS,", "Nuxt Js", "Tailwind CSS,", "API"],
+    source: "https://github.com/Khadalicioso/recipe_webapp.git",
+    demo: "",
+    status: "completed",
+  },
   {
     id: 17,
     title: "Spotify Clone",
