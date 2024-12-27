@@ -207,7 +207,7 @@ export const projects = [
     description:
       "The Recipe Web Application is designed to help users explore a wide variety of recipes from different cuisines. Users can search for recipes, view detailed instructions, and save their favorite recipes for easy access. The application is built with a focus on performance and user experience, ensuring that users can quickly find and manage their culinary interests.",
     image: nuxtcipes,
-    tags: ["Vue JS,", "Nuxt Js", "Tailwind CSS,", "API"],
+    tags: ["Vue JS", "Nuxt JS", "Tailwind CSS,", "API"],
     source: "https://github.com/Khadalicioso/recipe_webapp.git",
     demo: "",
     status: "completed",
@@ -219,7 +219,7 @@ export const projects = [
     description:
       "This project is a Spotify Clone built using modern web technologies. It aims to replicate the core functionalities of Spotify, providing a seamless music streaming experience. The application is developed with a focus on performance and user experience, leveraging the power of Vue 3, Vite, Tailwind CSS, Pinia, and JavaScript.",
     image: spotify_clone,
-    tags: ["Vue JS", "Vite", "Tailwind CSS,", "Pinia,", "Javascript"],
+    tags: ["Vue JS", "Vite", "Tailwind CSS", "Pinia", "Javascript"],
     source: "https://github.com/Khadalicioso/spotify_clone.git",
     demo: "",
     status: "completed",
@@ -285,7 +285,7 @@ export const projects = [
       "Vue JS",
       "Nuxt JS",
       "JavaScript",
-      "Laravel API",
+      "Laravel",
       "Pinia",
       "Tailwind CSS",
       "Axios",
@@ -349,7 +349,7 @@ export const projects = [
     description:
       "A simple yet powerful real estate system built with PHP where users can list, search, and manage properties. Perfect for small to medium-sized real estate agencies.",
     image: opulence,
-    tags: ["HTML", "CSS", "Javascript", "PDO", "PHP", "MySQL"],
+    tags: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/opulence.git",
     demo: "",
     status: "completed",
@@ -389,7 +389,7 @@ export const projects = [
     tags: [
       "ASP.NET Core",
       "MVC",
-      "Entity Framework",
+      "Entity Framework Core",
       "SQL Server",
       "API",
       "Paymongo",
