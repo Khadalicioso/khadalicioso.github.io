@@ -10,7 +10,7 @@
 
 ## 🚀 About Me
 
-I'm Miguel Enrique Dasalla, a passionate Full-Stack Developer dedicated to creating exceptional digital experiences. With a keen eye for detail and a commitment to clean, efficient code, I transform complex problems into elegant solutions.
+I'm Miguel Enrique Dasalla, a passionate and detail-oriented web developer committed to crafting captivating digital experiences. I thrive on staying up-to-date with the latest technologies and frameworks to deliver innovative and user-centric solutions.
 
 ### 💫 What I Do
 
@@ -60,31 +60,6 @@ npm start
 ```
 
 Visit `http://localhost:3000` in your browser to view the application.
-
-## 📁 Project Structure
-
-```
-khadalicioso.github.io/
-├── 📂 public/
-│   ├── index.html
-│   └── 📂 assets/
-├── 📂 src/
-│   ├── 📂 components/
-│   ├── 📂 pages/
-│   ├── 📂 styles/
-│   └── App.js
-└── package.json
-```
-
-## 🤝 Contributing
-
-Contributions are always welcome! Please feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
