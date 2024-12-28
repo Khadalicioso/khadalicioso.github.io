@@ -15,6 +15,14 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import html from "../../images/icons/html.png";
+import css from "../../images/icons/css.png";
+import js from "../../images/icons/js.png";
+import bootstrap from "../../images/icons/bootstrap.png";
+import tailwind from "../../images/icons/tailwind.png";
+import react from "../../images/icons/react.png";
+import vue from "../../images/icons/vue.png";
+import ts from "../../images/icons/ts.png";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -765,32 +773,14 @@ const Hero = () => {
               <motion.div {...headContentAnimation}>
                 <ImageWrapper>
                   <RotatingIconsBackground>
-                    <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
-                    <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
-                    <img
-                      src="https://skillicons.dev/icons?i=js"
-                      alt="JavaScript"
-                    />
-                    <img
-                      src="https://skillicons.dev/icons?i=bootstrap"
-                      alt="Bootstrap"
-                    />
-                    <img
-                      src="https://skillicons.dev/icons?i=tailwind"
-                      alt="Tailwind CSS"
-                    />
-                    <img
-                      src="https://skillicons.dev/icons?i=react"
-                      alt="React"
-                    />
-                    <img
-                      src="https://skillicons.dev/icons?i=vue"
-                      alt="Vue.js"
-                    />
-                    <img
-                      src="https://skillicons.dev/icons?i=ts"
-                      alt="TypeScript"
-                    />
+                    <img src={html} alt="HTML" />
+                    <img src={css} alt="CSS" />
+                    <img src={js} alt="JavaScript" />
+                    <img src={bootstrap} alt="Bootstrap" />
+                    <img src={tailwind} alt="Tailwind CSS" />
+                    <img src={react} alt="React JS" />
+                    <img src={vue} alt="Vue JS" />
+                    <img src={ts} alt="TypeScript" />
                   </RotatingIconsBackground>
                   <Img
                     src={miguel_enrique_dasalla}
