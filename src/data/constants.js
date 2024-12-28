@@ -386,14 +386,14 @@ export const projects = [
   },
   {
     id: 6,
-    title: "UNILINK - Student Information System",
+    title: "UNILINK - Student Information System and Course Scheduling",
     date: "September 2024 - December 2024",
     description:
-      "A modern and efficient subsystem of a larger academic platform, designed to streamline student information management and administrative processes.",
+      "A subsystem of the UNILINK: Academic Community Web Application, designed to streamline student information management and enhance administrative processes.",
     image: unilink,
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     source:
-      "https://github.com/Khadalicioso/unilink_student_information_system.git",
+      "https://github.com/Khadalicioso/UNILINK_Student_Information_System_and_Course_Scheduling.git",
     demo: "",
     status: "completed",
   },
