@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
-  height: 5rem;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,49 +12,33 @@ const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
-  color: white;
+  color: #fff;
 `;
 
 const ColorText = styled.div`
   color: ${({ theme }) => theme.primary};
-  font-size: 2rem;
-  transition: all 0.3s ease-in-out;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 1.5rem;
-  }
+  font-size: 32px;
 `;
 
 const NavbarContainer = styled.div`
   width: 100%;
-  max-width: 90rem;
-  padding: 0 1.5rem;
+  max-width: 1440px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  z-index: 1;
 `;
 
 const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   width: 80%;
-  padding: 0 0.375rem;
+  padding: 0 6px;
   font-weight: 900;
-  font-size: 1.125rem;
+  font-size: 18px;
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-  gap: 0.125rem;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 0.875rem;
-    width: 60%;
-    padding: 0 0.25rem;
-    gap: 0.0625rem;
-  }
 `;
 
 const NameText = styled.span`

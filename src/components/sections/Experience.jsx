@@ -93,27 +93,7 @@ const Desc = styled.div`
 
 const EarthCanvasContainer = styled.div`
   width: 100%;
-  height: 18.75rem;
-
-  /* ========== Mobile Devices (portrait and landscape) ========== */
-  @media only screen and (max-width: 767px) {
-    height: 13.75rem;
-  }
-
-  /* ========== Tablet Devices (portrait and landscape) ========== */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    height: 15rem;
-  }
-
-  /* ========== Laptop Devices (portrait and landscape) ========== */
-  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    height: 16.25rem;
-  }
-
-  /* ========== Desktop Devices (portrait and landscape) ========== */
-  @media only screen and (min-width: 1440px) {
-    height: 18.75rem;
-  }
+  height: 25rem;
 `;
 
 const Experience = () => {

@@ -63,7 +63,7 @@ const HeroInnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 90rem;
+  max-width: 1440px;
 
   /* ========== Mobile Devices (portrait and landscape) ========== */
   @media only screen and (max-width: 767px) {

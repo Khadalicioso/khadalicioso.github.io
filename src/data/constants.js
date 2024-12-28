@@ -37,6 +37,7 @@ import ts from "../images/icons/ts.png";
 import jquery from "../images/icons/jquery.png";
 import next from "../images/icons/next.png";
 import node from "../images/icons/node.png";
+import express from "../images/icons/express.png";
 import csharp from "../images/icons/csharp.png";
 import php from "../images/icons/php.png";
 import laravel from "../images/icons/laravel.png";
@@ -120,6 +121,10 @@ export const skills = [
       {
         name: "Node JS",
         image: node,
+      },
+      {
+        name: "Express JS",
+        image: express,
       },
       {
         name: "C#",
