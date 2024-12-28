@@ -54,8 +54,8 @@ const Desc = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  max-width: 600px;
-  max-height: 500px;
+  max-width: 700px;
+  max-height: 700px;
   height: auto;
   object-fit: cover;
   border-radius: 0.875rem;

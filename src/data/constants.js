@@ -20,6 +20,7 @@ import facebook_clone from "../images/logo/facebook_clone.png";
 import instagram_clone from "../images/logo/instagram_clone.png";
 import spotify_clone from "../images/logo/spotify_clone.png";
 import nuxtcipes from "../images/logo/nuxtcipes.png";
+import diary_ni_khadalicioso from "../images/logo/diary_ni_khadalicioso.png";
 
 // IMPORTED ICONS FROM IMAGES
 
@@ -201,13 +202,25 @@ export const experiences = [
 
 export const projects = [
   {
+    id: 19,
+    title: "Diary ni Khadalicioso",
+    date: "December 2024",
+    description:
+      "The Diary Web Application is a web-based platform using ASP.NET Core MVC and Entity Framework Core, enabling users to create, manage, and share diary entries. It features user authentication, CRUD operations, and a responsive design for various devices.",
+    image: diary_ni_khadalicioso,
+    tags: ["ASP.NET Core", "MVC", "C#", "Entity Framework Core", "SQL Server"],
+    source: "https://github.com/Khadalicioso/diary_webapp.git",
+    demo: "",
+    status: "completed",
+  },
+  {
     id: 18,
     title: "Nuxtcipes",
     date: "December 2024",
     description:
       "The Recipe Web Application is designed to help users explore a wide variety of recipes from different cuisines. Users can search for recipes, view detailed instructions, and save their favorite recipes for easy access. The application is built with a focus on performance and user experience, ensuring that users can quickly find and manage their culinary interests.",
     image: nuxtcipes,
-    tags: ["Vue JS", "Nuxt JS", "Tailwind CSS,", "API"],
+    tags: ["Vue JS", "Nuxt JS", "Tailwind CSS"],
     source: "https://github.com/Khadalicioso/recipe_webapp.git",
     demo: "",
     status: "completed",
@@ -219,7 +232,7 @@ export const projects = [
     description:
       "This project is a Spotify Clone built using modern web technologies. It aims to replicate the core functionalities of Spotify, providing a seamless music streaming experience. The application is developed with a focus on performance and user experience, leveraging the power of Vue 3, Vite, Tailwind CSS, Pinia, and JavaScript.",
     image: spotify_clone,
-    tags: ["Vue JS", "Vite", "Tailwind CSS", "Pinia", "Javascript"],
+    tags: ["Vue JS", "Tailwind CSS", "Pinia", "Javascript"],
     source: "https://github.com/Khadalicioso/spotify_clone.git",
     demo: "",
     status: "completed",
@@ -313,7 +326,7 @@ export const projects = [
     description:
       "A modern fitness application built with React and Material-UI that helps users discover, learn, and track various exercises. The app provides detailed exercise information, video demonstrations, and similar exercise recommendations.",
     image: debug_fitness,
-    tags: ["React JS", "API", "Material UI"],
+    tags: ["React JS", "Material UI"],
     source: "https://github.com/Khadalicioso/debug_fitness.git",
     demo: "",
     status: "completed",
@@ -349,7 +362,7 @@ export const projects = [
     description:
       "A simple yet powerful real estate system built with PHP where users can list, search, and manage properties. Perfect for small to medium-sized real estate agencies.",
     image: opulence,
-    tags: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/opulence.git",
     demo: "",
     status: "completed",
@@ -391,8 +404,8 @@ export const projects = [
       "MVC",
       "Entity Framework Core",
       "SQL Server",
-      "API",
-      "Paymongo",
+      "C#",
+      "PayMongo",
     ],
     source: "https://github.com/Khadalicioso/kopibara.git",
     demo: "",
@@ -400,7 +413,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "K$PAL Hotel and Resort",
+    title: "KPL Hotel and Resort",
     date: "September 2024",
     description:
       "A modern and efficient hotel booking system that provides seamless room reservations and management capabilities. Experience luxury and convenience at your fingertips!",
