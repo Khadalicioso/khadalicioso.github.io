@@ -47,8 +47,9 @@ import mongodb from "../images/icons/mongodb.png";
 import firebase from "../images/icons/firebase.png";
 import dotnet from "../images/icons/dotnet.png";
 import mui from "../images/icons/mui.png";
-import git from "../images/icons/git.png";
 import framer from "../images/icons/framer.png";
+import git from "../images/icons/git.png";
+import netlify from "../images/icons/netlify.png";
 
 // ABOUT ME
 
@@ -163,12 +164,16 @@ export const skills = [
         image: mui,
       },
       {
+        name: "Framer Motion",
+        image: framer,
+      },
+      {
         name: "Git",
         image: git,
       },
       {
-        name: "Framer Motion",
-        image: framer,
+        name: "Netlify",
+        image: netlify,
       },
     ],
   },
