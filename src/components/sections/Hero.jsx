@@ -21,8 +21,8 @@ import js from "../../images/icons/js.png";
 import bootstrap from "../../images/icons/bootstrap.png";
 import tailwind from "../../images/icons/tailwind.png";
 import react from "../../images/icons/react.png";
-import vue from "../../images/icons/vue.png";
 import ts from "../../images/icons/ts.png";
+import next from "../../images/icons/next.png";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -779,8 +779,8 @@ const Hero = () => {
                     <img src={bootstrap} alt="Bootstrap" />
                     <img src={tailwind} alt="Tailwind CSS" />
                     <img src={react} alt="React JS" />
-                    <img src={vue} alt="Vue JS" />
                     <img src={ts} alt="TypeScript" />
+                    <img src={next} alt="Next JS" />
                   </RotatingIconsBackground>
                   <Img
                     src={miguel_enrique_dasalla}
