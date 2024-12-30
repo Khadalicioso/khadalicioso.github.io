@@ -36,39 +36,11 @@ I'm Miguel Enrique Dasalla, a passionate and detail-oriented web developer commi
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
 
-## 🚀 Getting Started
-
-### Prerequisites
+## 🚀 Prerequisites
 
 - Node.js (v14+)
 - npm (v6+)
 
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/Khadalicioso/khadalicioso.github.io.git
-
-# Navigate to project directory
-cd khadalicioso.github.io
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-```
-
-Visit `http://localhost:3000` in your browser to view the application.
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-  <p>Built with ❤️ by Miguel Enrique Dasalla</p>
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-enrique-d-856879341/)
-</div>
