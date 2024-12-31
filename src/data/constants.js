@@ -59,7 +59,7 @@ export const skills = [
         image: css,
       },
       {
-        name: "Javascript",
+        name: "JavaScript",
         image: js,
       },
       {
@@ -75,7 +75,7 @@ export const skills = [
         image: react,
       },
       {
-        name: "Typescript",
+        name: "TypeScript",
         image: ts,
       },
       {
@@ -91,12 +91,16 @@ export const skills = [
         image: express,
       },
       {
+        name: "PHP",
+        image: php,
+      },
+      {
         name: "C#",
         image: csharp,
       },
       {
-        name: "PHP",
-        image: php,
+        name: ".NET Core",
+        image: dotnet,
       },
       {
         name: "MySQL",
@@ -113,10 +117,6 @@ export const skills = [
       {
         name: "Firebase",
         image: firebase,
-      },
-      {
-        name: ".NET Core",
-        image: dotnet,
       },
       {
         name: "Material UI",
@@ -152,7 +152,7 @@ export const experiences = [
       "Developed a student information system subsystem using PHP and MySQL for the Supersystem called UNILINK: Academic Community Web Application.",
       "Implementing responsive design and providing best UX for the users of the system.",
     ],
-    skills: ["ASP.Net Core", "PHP", "MySQL", "SQL Server"],
+    skills: [".NET Core", "C#", "SQL Server", "PHP", "MySQL"],
   },
 ];
 
@@ -202,8 +202,8 @@ export const projects = [
     description:
       "KOPIBARA is a modern web-based coffee ordering system developed by the KPL Team as part of the IPT102 - Integrative Programming and Technologies 2 course. Built with ASP.NET Core 8.0, it offers a seamless experience for customers to browse and order a variety of coffee beverages, including both hot and iced options.",
     image: kopibara,
-    tags: ["ASP.Net Core", "SQL Server", "C#", "PayMongo"],
-    source: "https://github.com/Khadalicioso/KOPIBARA.git",
+    tags: [".NET Core", "C#", "SQL Server", "PayMongo"],
+    source: "",
     demo: "",
     status: "completed",
   },
