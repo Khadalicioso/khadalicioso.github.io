@@ -1,6 +1,7 @@
 // IMPORTED LOGO FROM IMAGES
 
 import qcu from "../images/logo/qcu.png";
+import crypto_cosmos from "../images/logo/crypto_cosmos.jpg";
 import kopibara from "../images/logo/kopibara.png";
 import unilink from "../images/logo/unilink.png";
 import netflix_clone from "../images/logo/netflix_clone.png";
@@ -152,7 +153,16 @@ export const experiences = [
       "Developed a student information system subsystem using PHP and MySQL for the Supersystem called UNILINK: Academic Community Web Application.",
       "Implementing responsive design and providing best UX for the users of the system.",
     ],
-    skills: [".NET Core", "C#", "SQL Server", "PHP", "MySQL"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "C#",
+      "PHP",
+      ".NET Core",
+      "SQL Server",
+      "MySQL",
+    ],
   },
 ];
 
@@ -160,7 +170,7 @@ export const experiences = [
 
 export const projects = [
   {
-    id: 3,
+    id: 4,
     title: "Job Portal",
     date: "December 2024",
     description:
@@ -172,7 +182,7 @@ export const projects = [
     status: "inprogress",
   },
   {
-    id: 2,
+    id: 3,
     title: "Netflix Clone",
     date: "November 2024 - December 2024",
     description:
@@ -184,26 +194,38 @@ export const projects = [
     status: "completed",
   },
   {
-    id: 1,
+    id: 2,
     title: "UNILINK - Student Information System and Course Scheduling",
     date: "September 2024 - December 2024",
     description:
       "A subsystem of the UNILINK: Academic Community Web Application, designed to streamline student information management and enhance administrative processes.",
     image: unilink,
-    tags: ["PHP", "MySQL"],
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     source: "https://github.com/Khadalicioso/UNILINK-SubSystem.git",
     demo: "",
     status: "completed",
   },
   {
-    id: 0,
+    id: 1,
     title: "KOPIBARA",
     date: "September 2024 - December 2024",
     description:
       "KOPIBARA is a modern web-based coffee ordering system developed by the KPL Team as part of the IPT102 - Integrative Programming and Technologies 2 course. Built with ASP.NET Core 8.0, it offers a seamless experience for customers to browse and order a variety of coffee beverages, including both hot and iced options.",
     image: kopibara,
     tags: [".NET Core", "C#", "SQL Server", "PayMongo"],
-    source: "",
+    source: "https://github.com/Khadalicioso/KOPIBARA.git",
+    demo: "",
+    status: "completed",
+  },
+  {
+    id: 0,
+    title: "Crypto Cosmos",
+    date: "August 2024 - September 2024",
+    description:
+      "CryptoCosmos is a full-stack cryptocurrency marketplace offering real-time data and advanced trading tools. It enables users to explore trending assets and analyze market trends with a responsive design for seamless access across devices.",
+    image: crypto_cosmos,
+    tags: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/Khadalicioso/CryptoCosmos.git",
     demo: "",
     status: "completed",
   },
