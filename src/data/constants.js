@@ -174,7 +174,7 @@ export const projects = [
     title: "Job Portal",
     date: "December 2024",
     description:
-      "The MERN Stack Job Portal is a modern web application that allows users to search for job listings, post job opportunities, and manage their applications. Built using the MERN stack (MongoDB, Express.js, React, Node.js) and styled with Tailwind CSS, this application provides a seamless user experience and a responsive design.",
+      "This Job Portal is a modern web application that allows users to search for job listings, post job opportunities, and manage their applications. Built using the MERN stack (MongoDB, Express.js, React, Node.js) and styled with Tailwind CSS, this application provides a seamless user experience and a responsive design.",
     image: job_portal,
     tags: ["MongoDB", "Express JS", "React JS", "Node JS"],
     source: "https://github.com/Khadalicioso/job-portal.git",
