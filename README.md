@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Miguel Enrique Dasalla</h1>
   <p>
-    <strong>Full-Stack Developer | Programmer | Web Developer</strong>
+    <strong>Web Developer</strong>
   </p>
   
   [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://miguelenriquedasalla.netlify.app/)
